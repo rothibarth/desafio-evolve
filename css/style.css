@@ -1,0 +1,19 @@
+.forms-login-cadastro {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #98bec1;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+/*  mobile */
+@media (max-width: 768px) {
+    .row {
+        padding: 20px;
+    }
+
+    img.img-fluid {
+        max-height: 200px;
+        margin-bottom: 30px;
+    }
+}
