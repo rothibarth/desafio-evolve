@@ -136,7 +136,7 @@ $(document).ready(function () {
                 sessionStorage.setItem('usuarioLogado', JSON.stringify(usuario));
 
                 //redireciona para a pagina principal
-                window.location.href = '#';
+                window.location.href = 'principal.html';
             }else{
                 alert('Email ou senha incorretos!');
                 $('#loginPassword').addClass('is-invalid');
