@@ -30,7 +30,7 @@ $(document).ready(function () {
     }
 
     setupPasswordToggle('#toggleLoginPassword', '#loginPassword');
-    setupPasswordToggle('#toggleCadastroPassword', '#CadastroPassword');
+    setupPasswordToggle('#toggleCadastroPassword', '#cadastroPassword');
     setupPasswordToggle('#toggleCadastroConfirmPassword', '#cadastroConfirmPassword');
 
 })

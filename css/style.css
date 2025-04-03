@@ -1,6 +1,22 @@
+html, body {
+    background-color: #f5f6f2;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+}
+
+main {
+    background-color: #f5f6f2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+} 
+
 .forms-login-cadastro {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 20px auto;
     background: #98bec1;
     border-radius: 10px;
     padding: 30px;
