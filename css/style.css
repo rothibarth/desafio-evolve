@@ -4,16 +4,88 @@
     background: #98bec1;
     border-radius: 10px;
     padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/*  mobile */
+.form-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-toggle-btn {
+    background: none;
+    border: none;
+    padding: 5px 15px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+.form-toggle-btn.active {
+    color: #4361ee;
+}
+
+.form-toggle-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 2px;
+    background-color: #4361ee;
+}
+
+.form-container {
+    display: none;
+}
+
+.form-container.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.form-floating {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.invalid-feedback {
+    color: #dc3545;
+    font-size: 0.875em;
+    display: none;
+}
+
+.is-invalid ~ .invalid-feedback {
+    display: block;
+}
+
+/* mobile */
 @media (max-width: 768px) {
     .row {
         padding: 20px;
     }
-
-    img.img-fluid {
+    
+    img {
         max-height: 200px;
         margin-bottom: 30px;
+    }
+    
+    .forms-login-cadastro {
+        padding: 20px;
     }
 }

@@ -33,20 +33,22 @@
 
                     </div>
 
-                    <form id="login-form" class="form-container active">
+                    <form id="loginForm" class="form-container active">
                         <h1 class="text-center mb-4">Login</h1>
 
                         <div class="form-floating">
 
-                            <input type="email" class="form-control" id="loginEmail" placeholder="Ex: email@gmail.com" required>
+                            <input type="email" class="form-control" id="loginEmail" placeholder="Ex: email@gmail.com"
+                                required>
 
                             <label for="loginEmail">Email:</label>
                             <div class="invalid-feedback">Por favor, insira um email válido</div>
 
                         </div>
-                        
+
                         <div class="form-floating">
-                            <input type="password" class="form-control" id="loginPassword" placeholder="*******" required>
+                            <input type="password" class="form-control" id="loginPassword" placeholder="*******"
+                                required>
 
                             <label for="loginPassword">Senha:</label>
                             <i class="fas fa-eye password-toggle" id="toggleLoginPassword"></i>
@@ -58,14 +60,55 @@
 
                     </form>
 
+                    <form id="cadastroForm" class="form-container">
+                        <h1 class="text-center mb-4">Cadastro</h1>
 
+                        <div class="form-floating">
 
+                            <input type="text" class="form-control" id="cadastroName" placeholder="Nome completo"
+                                required>
 
+                            <label for="cadastroName">Nome Completo:</label>
+                            <div class="invalid-feedback">Por favor, insira seu nome</div>
+
+                        </div>
+
+                        <div class="form-floating">
+
+                            <input type="email" class="form-control" id="cadastroEmail"
+                                placeholder="Ex: email@gmail.com" required>
+
+                            <label for="cadastroEmail">Email:</label>
+                            <div class="invalid-feedback">Por favor, insira um email válido</div>
+
+                        </div>
+
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="cadastroPassword" placeholder="*******"
+                                required minlength="6">
+
+                            <label for="cadastroPassword">Senha:</label>
+                            <i class="fas fa-eye password-toggle" id="toggleCadastroPassword"></i>
+                            <div class="invalid-feedback">A senha deve conter pelo menos 6 caracteres</div>
+
+                        </div>
+
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="cadastroConfirmPassword"
+                                placeholder="Confirme a senha" required>
+
+                            <label for="cadastroConfirmPassword">Confirmar Senha:</label>
+                            <i class="fas fa-eye password-toggle" id="toggleCadastroConfirmPassword"></i>
+                            <div class="invalid-feedback">As senhas não coincidem</div>
+
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100 mt-3">Cadastrar</button>
+
+                    </form>
 
 
                 </div>
-
-
 
 
             </div>
@@ -77,9 +120,9 @@
     </main>
 
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/script-toggle.js"></script>
 
 </body>
 
