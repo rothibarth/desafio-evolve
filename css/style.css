@@ -102,8 +102,8 @@ main {
     }
 
     img {
-        max-height: 400px;
-        margin-bottom: 30px;
+        max-height: 300px;
+        margin-bottom: 0;
     }
 
     .forms-login-cadastro {
