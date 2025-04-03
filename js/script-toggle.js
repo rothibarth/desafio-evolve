@@ -33,4 +33,59 @@ $(document).ready(function () {
     setupPasswordToggle('#toggleCadastroPassword', '#cadastroPassword');
     setupPasswordToggle('#toggleCadastroConfirmPassword', '#cadastroConfirmPassword');
 
+    //validação confirmação de senha
+
+    $('#cadastroPassword', '#cadastroConfirmPassword').on('input', function () {
+        const password = $('#cadastroPassword').val();
+        const confirmPassword = $('#cadastroConfirmPassword').val();
+
+        if (password !== confirmPassword && confirmPassword !== '') {
+            $('#cadastroConfirmPassword').addClass('is-invalid');
+        } else {
+            $('#cadastroConfirmPassword').removeClass('is-invalid');
+        }
+    });
+
+    //validacao dos formularios
+    $('form').submit(function (e) {
+        e.preventDefault();
+
+        //limpeza das validações anteriores
+        $(this).find('.is-invalid').removeClass('is-invalid');
+
+        let isValid = true;
+        const form = $(this);
+
+        // Validação básica dos campos
+        form.find('[required]').each(function () {
+            if (!$(this).val()) {
+                $(this).addClass('is-invalid');
+                isValid = false;
+            }
+        });
+
+        // Validação  para o formulário de cadastro
+        if (form.attr('id') === 'cadastroForm') {
+            const password = $('#cadastroPassword').val();
+            const confirmPassword = $('#cadastroConfirmPassword').val();
+            
+            if (password.length < 6) {
+                $('#cadastroPassword').addClass('is-invalid');
+                isValid = false;
+            }
+            
+            if (password !== confirmPassword) {
+                $('#cadastroConfirmPassword').addClass('is-invalid');
+                isValid = false;
+            }
+        }
+        
+        if (isValid) {
+            alert('Formulário válido! Em uma aplicação real, seria enviado para o servidor.');
+        }
+    })
+
+
+    
+
 })
