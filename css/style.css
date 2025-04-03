@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     background-color: #f5f6f2;
     margin: 0;
     padding: 0;
@@ -12,7 +13,7 @@ main {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-} 
+}
 
 .forms-login-cadastro {
     max-width: 500px;

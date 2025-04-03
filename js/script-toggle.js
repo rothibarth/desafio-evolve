@@ -68,24 +68,24 @@ $(document).ready(function () {
         if (form.attr('id') === 'cadastroForm') {
             const password = $('#cadastroPassword').val();
             const confirmPassword = $('#cadastroConfirmPassword').val();
-            
+
             if (password.length < 6) {
                 $('#cadastroPassword').addClass('is-invalid');
                 isValid = false;
             }
-            
+
             if (password !== confirmPassword) {
                 $('#cadastroConfirmPassword').addClass('is-invalid');
                 isValid = false;
             }
         }
-        
+
         if (isValid) {
             alert('Formulário válido! Em uma aplicação real, seria enviado para o servidor.');
         }
     })
 
 
-    
+
 
 })
