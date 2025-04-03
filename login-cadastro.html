@@ -25,17 +25,49 @@
             </div>
 
             <div class="col-md-6">
-                <form class="forms-login-cadastro p-4">
 
-                    <h1 class="text-center mb-4">Login</h1>
-                    
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="ex: email@gmail.com">
-    
-                    <label for="password">Senha:</label>
-                    <input type="password" name="password" id="password" placeholder="*******" required>
+                <div class="forms-login-cadastro p-4">
+                    <div class="form-toggle">
+                        <button class="form-toggle-btn active" id="loginToggle">Login</button>
+                        <button class="form-toggle-btn" id="cadastroToggle">Cadastro</button>
 
-                </form>
+                    </div>
+
+                    <form id="login-form" class="form-container active">
+                        <h1 class="text-center mb-4">Login</h1>
+
+                        <div class="form-floating">
+
+                            <input type="email" class="form-control" id="loginEmail" placeholder="Ex: email@gmail.com" required>
+
+                            <label for="loginEmail">Email:</label>
+                            <div class="invalid-feedback">Por favor, insira um email válido</div>
+
+                        </div>
+                        
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="loginPassword" placeholder="*******" required>
+
+                            <label for="loginPassword">Senha:</label>
+                            <i class="fas fa-eye password-toggle" id="toggleLoginPassword"></i>
+                            <div class="invalid-feedback">Por favor, insira sua senha</div>
+
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100 mt-3">Entrar</button>
+
+                    </form>
+
+
+
+
+
+
+                </div>
+
+
+
+
             </div>
 
 
