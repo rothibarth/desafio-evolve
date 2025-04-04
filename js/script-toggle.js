@@ -62,7 +62,7 @@ $(document).ready(function () {
     });
 
     //validacao do formulario de cadastro
-    $('#cadastroform').submit(function (e) {
+    $('#cadastroForm').submit(function (e) {
         e.preventDefault();
 
         //limpeza das validações anteriores
@@ -136,7 +136,7 @@ $(document).ready(function () {
                 sessionStorage.setItem('usuarioLogado', JSON.stringify(usuario));
 
                 //redireciona para a pagina principal
-                window.location.href = 'principal.html';
+                window.location.href = './principal.html';
             }else{
                 alert('Email ou senha incorretos!');
                 $('#loginPassword').addClass('is-invalid');
