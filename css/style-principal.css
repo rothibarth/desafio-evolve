@@ -147,6 +147,18 @@ body {
 
 }
 
+/* Drag and Drop  */
+.drag_drop {
+    opacity: 0.5;
+    transform: scale(0.98);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.drag-over {
+    background-color: rgba(100, 126, 141, 0.2) !important;
+    border: 2px dashed #647e8d !important;
+}
+
 
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
