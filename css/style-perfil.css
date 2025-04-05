@@ -1,9 +1,15 @@
-body {
-    background-color: #f5f6f2;
+html, body {
+    background-color: #f5f6f2 !important;
+    padding: 0;
+    width: 100%;
     min-height: 100vh;
-    padding: 20px;
+    height: 100%;
+}
+
+body {
     display: flex;
     align-items: center;
+    padding: 20px;
 }
 
 .card-perfil {
@@ -11,7 +17,7 @@ body {
     margin: 0 auto;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     padding: 30px;
 }
 
